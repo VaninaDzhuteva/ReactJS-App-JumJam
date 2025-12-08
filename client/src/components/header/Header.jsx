@@ -8,8 +8,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
-
 export default function Header() {
 
   const { isAuthenticated, user, logoutHandler } = useContext(UserContext);

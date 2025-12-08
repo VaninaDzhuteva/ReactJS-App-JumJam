@@ -1,10 +1,16 @@
-export default function Logout
+import { useContext, useEffect } from "react"
+import { UserContext } from "../../contexts/UserContext.jsx"
+import { useNavigate } from "react-router";
 
-() {
-    return (
-        <h1>Logout
+export default function Logout() {
+    const { logoutHandler } = useContext(UserContext);
+    const navigate = useNavigate();
 
-            
-        </h1>
-    )
+    useEffect(() => {
+        (async () => {
+            await logoutHandler();
+            navigate('/');
+        })()
+    }, []);
+    return null
 }

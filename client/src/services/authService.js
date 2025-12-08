@@ -33,3 +33,12 @@ export async function login(email, password) {
 
     return await response.json();
 }
+
+export async function logout(token) {
+    await fetch(`${baseUrl}/logout`, {
+        method: 'GET',
+        headers: {
+            'X-Authorization': token
+        }
+    })
+}
