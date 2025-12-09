@@ -8,6 +8,7 @@ import Login from './components/login/Login.jsx';
 import Logout from './components/logout/Logout.jsx';
 import { GuestRoute, PrivateRoute } from './guards/AuthGuards.jsx';
 import CreateRecipe from './components/recipes/CreateRecipe.jsx';
+import BrowseRecipes from './components/recipes/BrowseRecipes.jsx';
 
 function App() {
 
@@ -17,8 +18,7 @@ function App() {
 
       <Routes>
         <Route index element={<Home />}></Route>
-        // todo update element for /recipes
-        <Route path='/recipes' element={<Home />}></Route>
+        <Route path='/browse-recipes' element={<BrowseRecipes />}></Route>
 
         <Route element={<GuestRoute />}>
           <Route path='/sign-up' element={<Register />} ></Route>

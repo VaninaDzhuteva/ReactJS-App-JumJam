@@ -15,15 +15,15 @@ export default function Header() {
 
   const guestLinks = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Browse', href: '/recipes', current: false },
+    { name: 'Browse', href: '/browse-recipes', current: false },
     { name: 'Login', href: '/login', current: false },
     { name: 'Sign up', href: '/sign-up', current: false },
   ];
 
   const userLinks = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Browse', href: '/recipes', current: false },
-    { name: 'Create recipe', href: '/create', current: false },
+    { name: 'Browse', href: '/browse-recipes', current: false },
+    { name: 'Create recipe', href: '/create-recipe', current: false },
     { name: `Logout`, href: '/logout', current: false, onClick: logoutHandler },
   ];
 
@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <Disclosure as="nav" className="relative">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -44,11 +44,13 @@ export default function Header() {
           </div>
           <div className="header flex flex-1 items-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
-                alt="Yumjam"
-                src="/images/yumjam-logo.png"
-                className="logo"
-              />
+              <Link to={'/'}>
+                <img
+                  alt="Yumjam"
+                  src="/images/yumjam-logo.png"
+                  className="logo"
+                />
+              </Link>
             </div>
             <div className="menu hidden sm:ml-6 sm:block">
               <div className="flex nav space-x-4">
@@ -69,8 +71,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
-
+ 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (

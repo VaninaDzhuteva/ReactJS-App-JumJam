@@ -1,0 +1,24 @@
+{
+  "fd8a1f5e-1a23-4c89-b98e-fc88e5739102": {
+    "_id": "fd8a1f5e-1a23-4c89-b98e-fc88e5739102",
+    "title": "Chocolate Cake",
+    "description": "A rich, moist chocolate cake perfect for celebrations.",
+    "ingredients": [
+      "200g flour",
+      "3 eggs",
+      "150g sugar",
+      "40g cocoa powder",
+      "1 tsp vanilla extract"
+    ],
+    "steps": [
+      "Preheat oven to 180°C.",
+      "Mix all dry ingredients in a bowl.",
+      "Whisk in eggs and vanilla.",
+      "Bake for 35 minutes."
+    ],
+    "imageUrl": "https://glutenfreebaking.com/wp-content/uploads/2022/10/Gluten-Free-Chocolate-Cake-on-a-Plate.jpg",
+    "_ownerId": "07f260f4-466c-4607-9a33-f7273b24f1b4",
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  }
+}

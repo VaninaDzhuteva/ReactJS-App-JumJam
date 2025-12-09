@@ -7,7 +7,7 @@ export default function Home () {
                 <div className="container">
                     <h1>Explore Delicious Recipes</h1>  
 
-                    <RecipeCard />
+                    {/* <RecipeCard /> */}
                 </div>
                 
             </div>

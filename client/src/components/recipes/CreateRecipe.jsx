@@ -1,4 +1,22 @@
+import { useNavigate } from "react-router"
+
 export default function CreateRecipe() {
+    // const navigate = useNavigate();
+
+    // const createRecipeHandler = async (values) => {
+    //     const data = values;
+
+    //     const [error, setError] = useState('');
+
+    //     try {
+    //         await fetch('http://localhost:3030/data/recipes'. {
+
+    //         })
+    //     } catch (err) {
+    //         setError(err.message)
+    //     }
+    // }
+
     return (
         <section className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-xl mt-10">
             <h1 className="text-3xl font-semibold mb-6 text-gray-800 text-center">
@@ -6,7 +24,9 @@ export default function CreateRecipe() {
             </h1>
 
             {/* error */}
-            {/* <p className="mb-4 text-red-600">{error}</p> */}
+             {/* {error && (
+                <p className="mb-4 text-red-600">{error}</p>
+             )} */}
 
             <form className="space-y-6">
                 {/* Title */}
@@ -28,7 +48,7 @@ export default function CreateRecipe() {
                 </div>
 
                 {/* Category */}
-                <div>
+                {/* <div>
                     <label className="text-m/6 font-medium text-gray-900">
                         Category <span className="text-red-500">*</span>
                     </label>
@@ -49,7 +69,7 @@ export default function CreateRecipe() {
                             <option value="Drink">Drink</option>
                         </select>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Description */}
                 <div>
