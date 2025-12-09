@@ -2,7 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useContext } from 'react'
 import { Link } from 'react-router'
-import { UserContext } from '../../contexts/UserContext.jsx'
+import { UserContext, useUserContext } from '../../contexts/UserContext.jsx'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -10,7 +10,8 @@ function classNames(...classes) {
 
 export default function Header() {
 
-  const { isAuthenticated, user, logoutHandler } = useContext(UserContext);
+  const { isAuthenticated } = useUserContext();
+  const { logoutHandler } = useContext(UserContext);
 
   const guestLinks = [
     { name: 'Home', href: '/', current: true },
@@ -22,7 +23,7 @@ export default function Header() {
   const userLinks = [
     { name: 'Home', href: '/', current: true },
     { name: 'Browse', href: '/recipes', current: false },
-    { name: 'Create recipe', href: '/create-recipe', current: false },
+    { name: 'Create recipe', href: '/create', current: false },
     { name: `Logout`, href: '/logout', current: false, onClick: logoutHandler },
   ];
 
