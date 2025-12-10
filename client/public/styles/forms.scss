@@ -6,3 +6,9 @@ form {
         text-align: left;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    form {
+        padding: 0;
+    }
+}

@@ -12,6 +12,7 @@ import BrowseRecipes from './components/recipes/BrowseRecipes.jsx';
 import RecipeDetails from './components/recipe-details/Recipedetails.jsx';
 import RecipeEdit from './components/recipe-edit/RecipeEdit.jsx';
 import NotFound from './components/not-found/NotFound.jsx';
+import MyRecipes from './components/my-recipes/MyRecipes.jsx';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/create-recipe' element={<CreateRecipe />}></Route>
           <Route path='/recipes/:recipeId' element={<RecipeDetails />}></Route>
           <Route path='/recipes/:recipeId/edit' element={<RecipeEdit />}></Route>
+          <Route path='/my-recipes' element={<MyRecipes />}></Route>
           <Route path='/logout' element={<Logout />}></Route>
         </Route>
 

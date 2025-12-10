@@ -1,6 +1,10 @@
 /* Home page */
 .home-page {
     padding: 60px 0;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
+    }
 }
 
 .recipes-container {
